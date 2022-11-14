@@ -10,7 +10,7 @@ public class Ejercicio4 {
 		 * n: Número indicado por el usuario que indica hasta donde contar. Se inicializa a 0
 		 * k: Es un contador, en este caso cuenta dentro del bucle "for" las veces que ha salido un número multiplo de 3. Se inicializa a 0
 		 */
-		int n = 0, k = 0;
+		int n, k = 0;
 		
 		//Creamos el scanner y lo nombramos "sc"
 		Scanner sc = new Scanner(System.in);
@@ -27,7 +27,10 @@ public class Ejercicio4 {
 		 * - Suma 3 a la variable "i" cada vuelta
 		 * - Suma 1 a la variable "k" cada vuelta
 		 */
-		for(int i=0; i <= n; i=i+3, k++) {
+		for(int i=1; i <= n; i++) {
+			if(i%3==0) {
+				k++;
+			}
 		}
 		
 		//Mostramos la cantidad de números pares que hay en el rango
